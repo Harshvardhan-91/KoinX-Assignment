@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PriceSection = ({ priceData }) => {
-  const { usd, usd_24h_change, inr } = priceData?.bitcoin || {};
+  const { usd = 0, usd_24h_change = 0, inr = 0 } = priceData?.bitcoin || {};
 
   return (
     <div className="bg-white p-6 rounded-lg shadow">
