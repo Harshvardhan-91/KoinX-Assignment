@@ -152,7 +152,7 @@ const CoinPage = () => {
                 KoinX allows you to be more educated and aware of your tax reports.
               </p>
               <img 
-                src="/frame.png" 
+                src="../assets/Frame.png" 
                 alt="KoinX Features" 
                 className="mx-auto mb-6 w-32 h-32"
               />
