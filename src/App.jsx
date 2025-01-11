@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Header from './components/Header';
 
 // Lazy load components for better performance
-const CoinPage = React.lazy(() => import('./pages/CoinPage'));
-const NotFound = React.lazy(() => import('./pages/NotFound'));
+const CoinPage = React.lazy(() => import('./Pages/CoinPage'));
+const NotFound = React.lazy(() => import('./Pages/NotFound'));
 
 function App() {
   return (
