@@ -5,6 +5,11 @@ import PriceSection from '../components/PriceSection';
 import TrendingCoins from '../components/TrendingCoins';
 import CoinCarousel from '../components/CoinCarousel';
 import { fetchCoinData, fetchTrendingCoins, fetchCoinDetails } from '../api/coingecko';
+import TokenomicsSection from '../components/Tokemonics';
+import About from '../components/About';
+import SentimentSection from '../components/Sentiment';
+import PerformanceSection from '../components/Performance';
+import Frame from '../assets/Frame.png'
 
 const CoinPage = () => {
   const { coinId } = useParams();
@@ -112,33 +117,62 @@ const CoinPage = () => {
             </div>
 
             {/* Performance Section */}
-            <div className="bg-white rounded-lg p-6">
-              <h2 className="text-2xl font-semibold mb-4">Performance</h2>
-              {/* Add performance metrics here */}
-            </div>
+            <PerformanceSection/>
 
             {/* Sentiment Section */}
-            <div className="bg-white rounded-lg p-6">
-              <h2 className="text-2xl font-semibold mb-4">Sentiment</h2>
-              {/* Add sentiment metrics here */}
-            </div>
+            <SentimentSection/>
 
             {/* About Section */}
-            <div className="bg-white rounded-lg p-6">
-              <h2 className="text-2xl font-semibold mb-4">About {coinData?.details?.name}</h2>
-              {/* Add about content here */}
-            </div>
+            <About/>
 
             {/* Tokenomics Section */}
-            <div className="bg-white rounded-lg p-6">
-              <h2 className="text-2xl font-semibold mb-4">Tokenomics</h2>
-              {/* Add tokenomics content here */}
-            </div>
+            <TokenomicsSection />
 
-            {/* Team Section */}
+            {/* TEAM SECTION */}
             <div className="bg-white rounded-lg p-6">
-              <h2 className="text-2xl font-semibold mb-4">Team</h2>
-              {/* Add team members here */}
+              <h2 className="text-2xl font-semibold mb-6">Team</h2>
+              <p className="text-[#3E424A] mb-6">Lorem ipsum dolor sit amet consectetur. Id consequat adipiscing arcu nibh. Eget mattis in mi integer sit egestas. Proin tempor id pretium quam. Facilisis purus convallis quam augue.</p>
+              
+              <div className="space-y-6">
+                {/* Team member cards */}
+                <div className="bg-[#E8F4FD] rounded-lg p-4">
+                  <div className="flex gap-6">
+                    <div className="w-24 h-24">
+                      <img src="https://powerpackelements.com/wp-content/uploads/2017/11/Team-memeber-01.png" alt="John Smith" className="w-full h-full object-cover rounded"/>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-bold">John Smith</h3>
+                      <p className="text-sm text-[#788F9B] mb-2">Designation here</p>
+                      <p className="text-sm text-[#0F1629]">Lorem ipsum dolor sit amet consectetur. In justo rutrum sit sit fermentum ut libero hendrerit id. Tellus sit ornare netus sagittis in nunc convallis mattis maecenas. Tempus arcu leo sociis laoreet nec neque sed pellentesque viverra. Consectetur proin amet ut id facilisi quis consectetur. Tellus gravida ultricies feugiat sed eu egestas dolor est ipsum. Malesuada etiam mi gravida praesent interdu</p>
+                    </div>
+                  </div>
+                </div>
+                {/* Add more team members */}
+                <div className="bg-[#E8F4FD] rounded-lg p-4">
+                  <div className="flex gap-6">
+                    <div className="w-24 h-24">
+                      <img src="https://billey-4437.kxcdn.com/wp-content/uploads/2019/08/team-member-01.jpg" alt="John Smith" className="w-full h-full object-cover rounded"/>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-bold">Elina Williams</h3>
+                      <p className="text-sm text-[#788F9B] mb-2">Designation here</p>
+                      <p className="text-sm text-[#0F1629]">Lorem ipsum dolor sit amet consectetur. In justo rutrum sit sit fermentum ut libero hendrerit id. Tellus sit ornare netus sagittis in nunc convallis mattis maecenas. Tempus arcu leo sociis laoreet nec neque sed pellentesque viverra. Consectetur proin amet ut id facilisi quis consectetur. Tellus gravida ultricies feugiat sed eu egestas dolor est ipsum. Malesuada etiam mi gravida praesent interdu</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-[#E8F4FD] rounded-lg p-4">
+                  <div className="flex gap-6">
+                    <div className="w-24 h-24">
+                      <img src="https://flashserviceagency.com/wp-content/uploads/2022/05/single-team.jpg" alt="John Smith" className="w-full h-full object-cover rounded"/>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-bold">John Smith</h3>
+                      <p className="text-sm text-[#788F9B] mb-2">Designation here</p>
+                      <p className="text-sm text-[#0F1629]">Lorem ipsum dolor sit amet consectetur. In justo rutrum sit sit fermentum ut libero hendrerit id. Tellus sit ornare netus sagittis in nunc convallis mattis maecenas. Tempus arcu leo sociis laoreet nec neque sed pellentesque viverra. Consectetur proin amet ut id facilisi quis consectetur. Tellus gravida ultricies feugiat sed eu egestas dolor est ipsum. Malesuada etiam mi gravida praesent interdu</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -152,7 +186,7 @@ const CoinPage = () => {
                 KoinX allows you to be more educated and aware of your tax reports.
               </p>
               <img 
-                src="../assets/koinx-logo.png" 
+                src={Frame} 
                 alt="KoinX Features" 
                 className="mx-auto mb-6 w-32 h-32"
               />

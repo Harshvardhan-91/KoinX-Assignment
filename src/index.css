@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Custom gradient background for performance bars */
+.performance-gradient {
+  background: linear-gradient(90deg, #FF4949 0%, #FF4E11 15.34%, #FC870A 30.45%, #FFAF11 48.68%, #C2CB21 66.9%, #11EB68 100%);
+}
+
+/* Custom blue background for the get started card */
+.get-started-card {
+  background-color: #0052FE;
+}
+
+/* Custom styles for the trading view chart */
+.tradingview-widget-container {
+  height: 560px !important;
+}
+
+/* Custom tab styles */
+.tab-active {
+  color: #0052FE;
+  border-bottom: 3px solid #0052FE;
+}
+
+/* Custom styles for tooltips */
+.custom-tooltip {
+  background: #0F1629;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: white;
+}
