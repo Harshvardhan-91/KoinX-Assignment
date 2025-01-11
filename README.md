@@ -22,43 +22,6 @@ https://cryptokoinx.netlify.app/bitcoin
 - CoinGecko API
 - TradingView Widget
 
-## Project Structure
-```
-Harshvardhan-91-KoinX-Assignment/
-├── README.md
-├── eslint.config.js
-├── index.html
-├── package.json
-├── postcss.config.js
-├── tailwind.config.js
-├── vite.config.js
-├── public/
-└── src/
-    ├── App.css
-    ├── App.jsx
-    ├── index.css
-    ├── input.css
-    ├── main.jsx
-    ├── Pages/
-    │   ├── CoinPage.jsx
-    │   └── NotFound.jsx
-    ├── api/
-    │   └── coingecko.js
-    ├── assets/
-    └── components/
-        ├── About.jsx
-        ├── CoinCarousel.jsx
-        ├── ErrorCallback.jsx
-        ├── Header.jsx
-        ├── Layout.jsx
-        ├── Performance.jsx
-        ├── PriceSection.jsx
-        ├── Sentiment.jsx
-        ├── Tokemonics.jsx
-        ├── TradingViewChart.jsx
-        └── TrendingCoins.jsx
-```
-
 ## API Integration
 
 ### CoinGecko APIs Used
